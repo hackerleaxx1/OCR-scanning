@@ -1,0 +1,29 @@
+{
+    "invoice_number": "100002",
+    "invoice_date": "01/03/2026",
+    "invoice_amount": 30000.0,
+    "items": [
+      {
+        "item_no": 1,
+        "item_name": "TV",
+        "item_quantity": 10,
+        "per_item_price": 1000.0,
+        "total_item_price": 10000.0
+      },
+      {
+        "item_no": 2,
+        "item_name": "WATCH",
+        "item_quantity": 5,
+        "per_item_price": 2000.0,
+        "total_item_price": 10000.0
+      },
+	{
+        "item_no": 3,
+        "item_name": "AMT",
+        "item_quantity": 1,
+        "per_item_price": 5000.0,
+        "total_item_price": 5000.0
+      }
+
+    ]
+  }

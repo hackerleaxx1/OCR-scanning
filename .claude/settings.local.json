@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(npm run:*)",
+      "Bash(python -c \":*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/api/health --connect-timeout 3)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/ --connect-timeout 3)",
+      "Bash(curl -s -X POST http://localhost:8000/api/upload -w \"\\\\nHTTP Status: %{http_code}\")",
+      "Bash(curl:*)",
+      "Bash(cd /tmp)",
+      "Bash(printf '\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n\\\\x00\\\\x00\\\\x00\\\\rIHDR\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x00\\\\x00\\\\x01\\\\x08\\\\x02\\\\x00\\\\x00\\\\x00\\\\x90wS\\\\xde\\\\x00\\\\x00\\\\x00\\\\x0cIDATx\\\\x9cc\\\\xf8\\\\x0f\\\\x00\\\\x00\\\\x01\\\\x01\\\\x00\\\\x05\\\\x18\\\\xd8N\\\\x00\\\\x00\\\\x00\\\\x00IEND\\\\xaeB`\\\\x82')",
+      "Bash(pip install:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(start /B python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(taskkill /F /IM \"python.exe\")",
+      "Bash(sed -i 's/\"item_no\": 01/\"item_no\": 1/g' 3.json 4.json)",
+      "Bash(sed -i 's/\"item_no\": 02/\"item_no\": 2/g' 3.json 4.json)",
+      "Bash(rm:*)",
+      "Bash(dir \"C:\\\\Users\\\\natha\\\\OneDrive\\\\Desktop\\\\OCR AI\\\\vendors\")",
+      "Bash(dir \"C:\\\\Users\\\\natha\\\\OneDrive\\\\Desktop\\\\OCR AI\\\\backend\\\\vendors\")"
+    ]
+  }
+}

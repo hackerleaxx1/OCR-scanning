@@ -1,0 +1,52 @@
+{
+  "templates": {
+    "invoice_number": {
+      "field_name": "invoice_number",
+      "label_texts": [
+        "invoice number"
+      ],
+      "label_x": 990,
+      "label_y": 395,
+      "value_offset_x": 46,
+      "value_offset_y": 11,
+      "value_position": "below",
+      "confidence_boost": 0.3
+    },
+    "invoice_date": {
+      "field_name": "invoice_date",
+      "label_texts": [
+        "date"
+      ],
+      "label_x": 1032,
+      "label_y": 219,
+      "value_offset_x": -75,
+      "value_offset_y": 19,
+      "value_position": "below",
+      "confidence_boost": 0.3
+    },
+    "invoice_amount": {
+      "field_name": "invoice_amount",
+      "label_texts": [
+        "total"
+      ],
+      "label_x": 1291,
+      "label_y": 900,
+      "value_offset_x": 0,
+      "value_offset_y": -18,
+      "value_position": "below",
+      "confidence_boost": 0.6
+    }
+  },
+  "table_template": {
+    "start_y": 587,
+    "row_height": 67,
+    "column_positions": {},
+    "item_no_col": 50,
+    "item_name_col": 169,
+    "qty_col": 782,
+    "price_col": 942,
+    "total_col": 1403
+  },
+  "image_width": 1646,
+  "image_height": 1148
+}

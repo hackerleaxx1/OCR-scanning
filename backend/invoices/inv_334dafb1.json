@@ -1,0 +1,88 @@
+{
+  "id": "inv_334dafb1",
+  "vendor_id": "2588499b",
+  "status": "validated",
+  "image_path": "inv_20260408075302.pdf",
+  "ocr_text": "INVOICE Invoice No. 100005 Invoice Date: 02/05/2026 Address: Park Street,Kolkata West Bengal, Pin-700013 Item No. Item description Quantity Unit Price Total Price 01 BED 2 5000 10000 02 SOFA 2 2000 4000 Net Amount 14000 Taxes 500 Total Amount 19000",
+  "predictions": {
+    "invoice_number": "100005",
+    "invoice_date": "02/05/2026",
+    "invoice_amount": 19000.0,
+    "items": [
+      {
+        "item_no": 1,
+        "item_name": "Bed",
+        "item_quantity": 2,
+        "per_item_price": 5000.0,
+        "total_item_price": 10000.0
+      },
+      {
+        "item_no": 2,
+        "item_name": "Sofa",
+        "item_quantity": 2,
+        "per_item_price": 2000.0,
+        "total_item_price": 4000.0
+      }
+    ]
+  },
+  "confidence_scores": {
+    "invoice_number": 0.95,
+    "invoice_date": 0.95,
+    "invoice_amount": 0.95,
+    "items": [
+      {
+        "item_no": 0.9,
+        "item_name": 0.9,
+        "item_quantity": 0.9,
+        "per_item_price": 0.9,
+        "total_item_price": 0.9
+      },
+      {
+        "item_no": 0.9,
+        "item_name": 0.9,
+        "item_quantity": 0.9,
+        "per_item_price": 0.9,
+        "total_item_price": 0.9
+      }
+    ]
+  },
+  "corrected_data": {
+    "invoice_number": "100005",
+    "invoice_date": "02/05/2026",
+    "invoice_amount": 19000.0,
+    "items": [
+      {
+        "item_no": 1,
+        "item_name": "Bed",
+        "item_quantity": 2,
+        "per_item_price": 5000,
+        "total_item_price": 10000
+      },
+      {
+        "item_no": 2,
+        "item_name": "Sofa",
+        "item_quantity": 2,
+        "per_item_price": 2000,
+        "total_item_price": 4000
+      }
+    ]
+  },
+  "created_at": "2026-04-08T07:53:03.518293",
+  "validated_at": "2026-04-08T07:54:00.611782",
+  "validated_items": [
+    {
+      "item_no": 1,
+      "item_name": "Bed",
+      "item_quantity": 2,
+      "per_item_price": 5000,
+      "total_item_price": 10000
+    },
+    {
+      "item_no": 2,
+      "item_name": "Sofa",
+      "item_quantity": 2,
+      "per_item_price": 2000,
+      "total_item_price": 4000
+    }
+  ]
+}

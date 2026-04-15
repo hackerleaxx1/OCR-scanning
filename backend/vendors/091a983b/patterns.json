@@ -1,0 +1,77 @@
+{
+  "invoice_number": {
+    "patterns": [
+      "(?:invoice\\s*(?:no\\.?|number|#)?:?\\s*)([A-Z0-9\\-]+)",
+      "(?<!\\w)(INV-?\\d+[-\\d]*)(?!\\w)",
+      "(?<!\\w)(INV[_-]\\d+[-\\d]*)(?!\\w)"
+    ],
+    "common_prefixes": [
+      "INV",
+      "Invoice",
+      "inv"
+    ],
+    "prefix_whitelist": [
+      "INV",
+      "INVOICE",
+      "inv",
+      "Inv"
+    ],
+    "digit_counts": [
+      1
+    ]
+  },
+  "invoice_date": {
+    "formats": [
+      "%Y-%m-%d",
+      "%d-%m-%Y",
+      "%m/%d/%Y",
+      "%d/%m/%Y",
+      "%Y/%m/%d"
+    ],
+    "patterns": [
+      "\\b(\\d{4}-\\d{2}-\\d{2})\\b",
+      "\\b(\\d{2}/\\d{2}/\\d{4})\\b",
+      "\\b(\\d{2}-\\d{2}-\\d{4})\\b"
+    ]
+  },
+  "invoice_amount": {
+    "patterns": [
+      "(?:total|amount|grand\\s*total|balance\\s*due)[:.\\s]*[$]?\\s*([\\d,]+\\.?\\d*)",
+      "[$]\\s*([\\d,]+\\.?\\d*)"
+    ],
+    "range": {
+      "min": 0,
+      "max": 1000000,
+      "values": [
+        150500.0,
+        150500.0
+      ]
+    }
+  },
+  "items": {
+    "common_names": [
+      "dressing table",
+      "bed cgst 5% sgst 5%",
+      "bed"
+    ],
+    "name_patterns": [
+      "dressing",
+      "table",
+      "bed",
+      "cgst",
+      "sgst"
+    ],
+    "item_no_patterns": [
+      "1",
+      "2"
+    ],
+    "quantity_range": {
+      "min": 1,
+      "max": 10000.0
+    },
+    "price_range": {
+      "min": 0,
+      "max": 100000
+    }
+  }
+}
